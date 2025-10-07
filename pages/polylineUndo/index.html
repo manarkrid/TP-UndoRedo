@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Undo-Redo Polyline</title>
+</head>
+
+<body>
+    <h1>Undo-Redo Polyline</h1>
+    <table style="width: 100%;">
+        <caption>Enoncé</caption>
+        <tr>
+            <!-- Colonne gauche : container et boutons -->
+            <td style="vertical-align: top;">
+                <div id="container" style="border: 1px solid #ccc; width: 400px; height: 400px;"></div>
+                <div style="margin-top: 10px;">
+                    <button id="undo">Undo</button>
+                    <button id="redo">Redo</button>
+                    <button id="changeColor">Changer couleur</button>
+                </div>
+                <div style="margin-top: 10px;">
+                    Notes:<br />
+                    La commande qu'on veut pouvoir annuler est l'ajout d'une polyline au dessin.<br />
+                    Pour exécuter cette commande : <code>dessin.add(line)</code><br />
+                    Pour annuler : <code>line.remove()</code><br />
+                    Vous pouvez utiliser la classe "Stack" pour implémenter le "UndoManager".<br />
+                </div>
+            </td>
+
+            <!-- Colonne droite : image explicative -->
+            <td style="vertical-align: top; text-align: center;">
+                <div>Implémenter le "undo-redo" en utilisant le pattern "Commande"</div>
+                <img src="//www.plantuml.com/plantuml/png/bP11ImCn48Nl-HL3JhjA2rvxM0ezUH2aqXymPf-oD9cK95i4yRzBQX9NHSJRyFXcvhstZOb3cfrLndACT2jdVqIWL_McYdIGqT-nyFD59hh62yoSqEsySonZdpN3ahcktz2ZznOiHTtZXpfVm3m5v2c_cYGXFB41bQjVN_MBlMPivyK49DIDoPqi72J5VnpPms0wrsXiqkIbk-V03WcXLvciR9LBFRMhrMeWVKFkeoEzBAmnw_NGJ6te415fK0siHwxq0ihbF2Gsnp_9dAcItqgfvaA9gLlWtyXJ3Qa_yogrXOopi-y0" 
+                     alt="undo-redo" style="max-width: 100%;">
+            </td>
+        </tr>
+    </table>
+
+    <hr />
+    <a href="/">Retour à la page principale</a>
+
+    <script type="module" src="polylineUndo.js" defer></script>
+</body>
+
+</html>
