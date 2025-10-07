@@ -93,6 +93,7 @@ const undoManager = new UndoManager();
 
 // ---------- Étape 1/2 : Machine XState pour créer la polyline ----------
 const polylineMachine = createMachine({
+    /** @xstate-layout N4IgpgJg5mDOIC5QAcD2AbAngGQJYDswA6XCdMAYgFkB5AVQGUBRAYWwEkWBpAbQAYAuohSpYuAC65U+YSAAeiAOwAmAMxEAnAFY+fZQDYALGsMAOVaYA0ITIgCMprUXOrVx84sUa+W5QF8-azQsPEIiaTAABVQCcWp6ZjZOXkFZNDFJaVkFBBV1bV0DYzdzKxtELWMiVWUdQzs7Gq9lf0CQYJwCYgjo2PjGJloANSZ+ISR20QkpGQmc01NlatVFLVV9RTtFVQ1la1sEGr4ifVq+VT5DTb4GyoCgjE6wnpj8OKZYAGMAQ2QwMbSU0ys1AOUUhg0RAatWUhl8Bkqhn2iFMkIsrlUDlRdlOEPukxCXSIAFtvvhML03rB+okONwARN0tMsnMKqYiMpTKsfKZ9HxTHZlBo7Ejygg4eoHK59BpDDLUZdFPiOqFiKTyZTxNTaAMkvS7OMRBkZtlEKpfBzdLpzELwd5RQdlODLYUfGZFDdlY9VSSyRTXlqaYMaCMGUbmSD5PY+PpqrjZXKalzjMjDlpY9tXFpHMpBbivYSwur-bFqR8fn8w5NjSzQWaLcorfyaho7ZdU1tFERuboNHzdCoNBoC081X7NWW3mAAE5VpnA01ppaNq021sQ9tigUcodD3laEWGCFaEc+4sTigAIW+nwA1rBkDf-qlGUCTazxUsm9+mw7EAZjk5Vwri0FR9DcQxTyJc8A2pa87wfJ8eANQEa0jHJzWXJs1zbP9Dg0dl+3OdNsyuRYAjafBUAgOBAULMBUIjRcAFonF3diOO0RRU1YzROM43koLCUhyEYhcP30Rpqh0G4dn0STGj2MVGzsDkzjsNZJJMNwhO6QhNTE986wQbxjlAnQdghbZUQ0VNjC-bl6nqPsdi0E82hVaDx1gwzayjBBbiIOVYT7ST9B0A8ygONzDBODFTEuBxIvcgIgA */
     id: "polyLine",
     initial: "idle",
     states: {
